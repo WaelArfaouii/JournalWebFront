@@ -1,6 +1,19 @@
 <form class="container cont card">
+  <h3 class="title">Register</h3>
+  <label>First Name</label>
+  <input type="text" class="form-control" placeholder="First Name ">
+  <label >Last Name</label>
+  <input type="text" class="form-control"  placeholder="Last Name">
+  <label >Job Title</label>
+  <input type="text" class="form-control" placeholder="Job Title">
+  <label >Country</label>
+  <input type="text" class="form-control"  placeholder="Country">
+  <label >Adress</label>
+  <input type="text" class="form-control" placeholder="Adress">
+  <label >Phone Number</label>
+  <input type="text" class="form-control" placeholder="Phone Number">
+
   <div class="  form-group">
-    <h3 class="title">Login</h3>
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -14,7 +27,8 @@
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
   <div class="subreg d-flex justify-content-between">
-    <button type="submit " class="btn btn-primary sub">Login</button>
-    <button type="submit " class="btn btn-primary reg">Register</button>
+    <button type="submit " class="btn btn-primary sub">Register</button>
+    <button [routerLink]="['/login']" type="submit " class="btn btn-primary reg">Login</button>
   </div>
 </form>
+
